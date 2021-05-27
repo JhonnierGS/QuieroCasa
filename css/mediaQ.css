@@ -1,0 +1,119 @@
+@media (max-width: 1000px){
+    .container-casa__left {
+        padding: 0 10px;
+    }
+
+    .grid-component__container {
+        grid-template-columns: repeat(3, 295px);
+    }
+
+    .custom-menu {
+        
+        margin: 30px 39px 0 2px;
+    }
+}
+
+@media (max-width: 750px){
+    .house-main__container {
+        height: 200px;
+        display: block;
+        justify-content: center;
+        
+    }
+
+    .container-casa__left {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        
+    }
+
+    .container-casa__left .title-house {
+        justify-content: center;
+    }
+
+    .container-casa__left .image-house img {
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+    }
+
+    .title-house h1 {
+        font-size: 19px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container-casa__right {
+        display: flex;
+        padding-top: 0;
+        margin-left: 60px;
+        justify-content: center;
+    }
+
+    .grid-component__container {
+        grid-template-columns: repeat(2, 295px);
+    }
+    
+    .custom-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 30px 100px 0 118px;
+    }
+
+    .section-filter {
+        height: 280px;
+    }
+
+    .buttons-filters {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 600px){
+    .grid-component__container {
+        grid-template-columns: repeat(1, 295px);
+    }
+
+    .search {
+        display: none;
+    }
+
+    .new-proyect{
+        margin-right: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px){
+    .header-container .logo {
+        padding: 0;
+    }
+
+    .container-icons {
+        padding: 0 30px;
+    }
+
+    .notification {
+        right: 123px;
+    }
+
+    .components-projects .projects-title {
+        padding-left: 50px;
+    }
+
+    .projects-icon {
+        margin: 29px 50px 0 0;
+    }
+
+    .custom-menu {
+        margin: 32px 10px 0 10px;
+    }
+
+    .section-filter .title-filter {
+        padding: 45px 25px 0 25px;
+    }
+}

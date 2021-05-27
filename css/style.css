@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2feff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header........................... */
+
+.header-container{
+    width: 100%;
+    height: 40px;
+    background-color:#153236;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo{
+    padding: 0 100px;
+}
+
+.header-container .logo img{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    margin-left: 15px;
+    
+}
+
+.container-icons{
+    width: 126px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    padding: 0 100px;
+    cursor: pointer;
+}
+
+
+
+.notification{
+    position: absolute;
+    top: 19px;
+    right: 193px;
+    width: 10px;
+    height: 10px;
+    background: #FB8631;
+    border-radius: 50%;
+}
+
+.container-icons .icon{
+    width: 42px;
+    height: 36px;
+    border: 1px solid #214c52;
+    border-top: none;
+}
+
+.container-icons .icon img{
+    width: 16px;
+    height: 22px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.container-icons .icon-user{
+    width: 42px;
+    height: 36px;
+    border: 1px solid #214c52;
+    border-top: none;
+}
+
+.container-icons .icon-user img{
+    width: 24px;
+    height: 24px;
+    margin-left: 9px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+/*fin header........................... */
+
+/* main section 1................................ */
+
+.house-main__container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-casa__left{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 104px;
+}
+
+.container-casa__left .image-house img{
+    width: 65px;
+    height: 65px;
+    margin-top: 17px;
+}
+
+.container-casa__left .title-house{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 59px 59px 229px;
+    grid-template-rows: 33px 1fr;
+}
+
+.title-house h1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 24px;
+}
+
+.icon-house{
+    display: flex;
+    align-items: center;
+
+}
+
+.icon-house p{
+    margin-left: 10px;
+    font-size: 14px;
+    
+}
+
+.icon-house img{
+    width: 16px;
+    height: 18px;
+    margin-left: 8px;
+}
+
+.icon-house .arrow-down{
+    width: 11px;
+    height: 6;
+}
+
+.container-casa__right{
+    display: flex;
+    padding-top: 42px;
+}
+
+.search{
+    position: relative;
+    width: 295px;
+    height: 36px;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 1px #3333;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
+
+.search .icon{
+    position: absolute;
+    top: -12px;
+    left: 245px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search .icon::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #333333;
+    border-radius: 50%;
+    transform: translate(-4px, -4px) 
+}
+
+.search .icon::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 7px;
+    background: #333333;
+    transform: translate(4px, 4px) rotate(315deg)
+}
+
+.search .input{
+    position: relative;
+    width: 240px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.search .input input{
+    position: absolute;
+    top: -12px;
+    left: -50px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    
+}
+
+.new-proyect{
+    position: relative;
+    width: 190px;
+    height: 36px;
+    background-color: #4ABFCE;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.new-proyect:hover{
+    background: #0e93a5;
+}
+
+.new-proyect img{
+    width: 20px;
+    height: 20px;
+}
+
+.new-proyect p{
+    margin: 0;
+    color: #fff;
+    margin-left: 11px;
+    font-size: 14px;
+}
+
+/* main section 1................................ */
+
+/* main section 2................................ */
+
+.container-components{
+    /* height: 100vh; */
+}
+
+.components-projects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.components-projects .projects-title{
+    display: flex;
+    margin-top: 35px;
+    padding-left: 102px;
+}
+
+
+.components-projects .projects-title img{
+    width: 19px;
+    height: 22px;
+}
+
+.components-projects .projects-title h2{
+    margin: 0 0px 0 10px;
+    font-size: 18px;
+    
+}
+
+.components-projects .projects-title p{
+    margin: 1px;
+    color: #999999;
+    font-size: 18px;
+}
+
+.projects-icon{
+    display: flex;
+    margin:29px 100px 0 0;
+}
+
+.projects-icon__container{
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 0.5s all;
+}
+
+.projects-icon__container:hover{
+    background-color: #4ABFCE;
+
+}
+
+.projects-icon__containerB{
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #4ABFCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.projects-icon__containerB:hover{
+    background-color: #0e93a5;
+}
+
+.projects-icon__containerC{
+    width: 36px;
+    height: 36px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projects-icon__containerC:hover{
+    background-color: #4ABFCE;
+
+}
+
+.projects-icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.grid-component__container{
+    display: grid;
+    justify-content: center;
+    margin-top: 37px;
+    grid-template-columns: repeat(4, 295px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 31px 20px;
+}
+
+.component-card{
+    width: 295px;
+    height: 328px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.component-card .card-up{
+    width: 100%;
+    height: 229px;
+    background-image: url("https://www.landdesign.com.ar/wp-content/uploads/2020/06/img.jpg");
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-up .card-header{
+    height: 229px;
+    background: linear-gradient(0.25deg, #000000 10.96%, rgba(0, 0, 0, 0.25) 35.16%);
+    /* opacity: 0.75; */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+
+.header-left .header-status{
+    width: 80px;
+    height: 18px;
+    margin: 21px 21px;
+    border-radius: 3px;
+    background: #4EC84C;
+    text-align: center;
+    font-size: 11px;
+    
+}
+
+.noInit{
+    display: none;
+}
+
+.header-left .header-status2{
+    width: 80px;
+    height: 18px;
+    margin: 21px 21px;
+    border-radius: 3px;
+    background: #EFB500;
+    text-align: center;
+    font-size: 11px;
+    
+}
+
+.header-left .header-status3{
+    width: 80px;
+    height: 18px;
+    margin: 21px 21px;
+    border-radius: 3px;
+    background: #FB8631;
+    text-align: center;
+    font-size: 11px;
+    
+}
+
+.header-left .header-status4{
+    width: 80px;
+    height: 18px;
+    margin: 21px 21px;
+    border-radius: 3px;
+    background: #999;
+    text-align: center;
+    font-size: 11px;
+    
+}
+
+.header-left__icons{
+    display: flex;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.header-left__icons .icon-one{
+    display: flex;
+    margin: -10px 22px;
+}
+
+.header-left__icons .icon-one img{
+    width: 15px;
+    height: 16px;
+}
+
+.header-left__icons .icon-one p{
+    margin: 0 6px;
+    font-size: 14px;
+}
+
+
+.header-left__icons .icon-two{
+    display: flex;
+    margin: -10px 0;
+    
+}
+
+.header-left__icons .icon-two img{
+    width: 15px;
+    height: 16px;
+}
+
+.header-left__icons .icon-two p{
+    margin: 0 6px;
+    font-size: 14px;
+}
+
+.header-right{
+    margin: 24px 21px 0 0;
+    opacity: 0.85;
+}
+
+.header-right img{
+    width: 19px;
+    height: 18px;
+}
+
+.card-main{
+    width: 100%;
+    height: 44px;
+    margin-top: -55px;
+    padding-left: 21px;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.card-main h3{
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-main p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.card-down{
+    margin: 13px;
+}
+
+.card-iconUp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconUp-dollar{
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.iconUp-dollar img{
+    width: 10px;
+    height: 18px;
+}
+
+.iconUp-dollar p{
+    margin: 0 0 0 5px;
+    font-size: 14px;
+}
+
+.iconUp-ruler{
+    display: flex;
+    margin-right: 20px;
+}
+
+.iconUp-ruler img{
+    width: 16px;
+    height: 16px;
+    transform: rotate(90deg);
+}
+
+.iconUp-ruler p{
+    margin: 0 0 0 9px;
+    font-size: 14px;
+}
+
+.card-line{
+    width: 255px;
+    margin: 12px 7px;
+    border: 1px solid #999;
+}
+
+.card-iconDown{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconDown-check{
+    display: flex;
+    margin: 5px 0;
+}
+
+.iconDown-check img{
+    width: 20px;
+    height: 20px;
+}
+
+.iconDown-check p{
+    margin: 0 0 0 8px;
+    font-size: 14px;
+}
+
+.iconDown-square{
+    display: flex;
+    margin: 3px 0;
+}
+
+.iconDown-square img{
+    width: 20px;
+    height: 20px;
+}
+
+.iconDown-square p{
+    margin: 1px 0 0 5px;
+    font-size: 14px;
+}
+
+.comment-container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 33px 100px;
+}
+
+.iconComments{
+    width: 60px;
+    height: 60px;
+    background: #4ABFCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.iconComments:hover{
+    background-color: #0e93a5;
+}
+
+.iconComments img{
+    width: 36px;
+    height: 36px;
+}
+/* main section 2................................ */
+
+.footer{
+    width: 100%;
+    height: 20px;
+    background: #153236;
+}
+
+
