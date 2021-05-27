@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filterStyle.css">
+    <link rel="stylesheet" href="css/mediaQ.css">
+    <title>Quierocasa</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <img src="assets/images/impsu.jpg" alt="logo de la empresa">
+        </div>
+        <div class="container-icons">
+            <div class="notification"></div>
+            <div class="icon">
+                <img src="assets/icons/bell-regular.svg" alt="icono-campana">
+            </div>
+            <div class="icon">
+                <img src="assets/icons/question-circle-regular.svg" alt="icono-pregunta">
+            </div>
+            <div class="icon-user">
+                <img src="assets/images/jhonny.jpg" alt="foto de perfil">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="house-main__container">
+            <div class="container-casa__left">
+                <div class="image-house">
+                    <img src="assets/images/logo2.png" alt="imagen house">
+                </div>
+                <div class="title-house">
+                    <h1>Quierocasa</h1>
+                    <div class="icon-house">
+                        <img src="assets/icons/building-regular.svg" alt="icon-edificio">
+                        <p>25</p>
+                    </div>
+                    <div class="icon-house">
+                        <img src="assets/icons/user-circle-regular.svg" alt="icon-user">
+                        <p>71</p>
+                    </div>
+                    <div class="icon-house">
+                        <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo de dinero">
+                        <p>891.308.499.537 MXN</p>
+                        <img class="arrow-down" src="assets/icons/chevron-down-solid.svg" alt="icon-flecha abajo">
+                    </div>
+                </div>
+            </div>
+            <div class="container-casa__right">
+                <div class="search">
+                    <div class="icon"></div>
+                    <div class="input">
+                        <input type="text" placeholder="Buscar">
+                    </div>
+                </div>
+                <div class="new-proyect">
+                    <img src="assets/icons/plus-circle-solid.svg" alt="icon- signo de mas">
+                    <p>Crear proyecto</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-filter" id="window">
+            <div class="title-filter">
+                <div class="subtitle-filter">
+                    <img src="assets/icons/filter-solid - copia.svg" alt="icon-filtro">
+                    <h1>filtros y ordén</h1>
+                    <p>(Iniciado, de la A a la Z)</p>
+                </div>
+                <div class="filter-iconTimesCircle">
+                    <a href="javascript:close()"><img src="assets/icons/times-circle-regular.svg" alt="icon-cerrar"></a>
+                </div>
+            </div>
+            <div class="custom-menu">
+                <div class="custom-select" style="width:200px;">
+                    <h3>Estado: </h3>
+                    <select>
+                        <option value="">Todos</option>
+                        <option value="">Iniciado</option>
+                        <option value="">No iniciado</option>
+                        <option value="">Detenido</option>
+                        <option value="">Finalizado</option>
+                    </select>
+                </div>
+                <div class="custom-select" style="width:200px;">
+                    <h3>Nombre: </h3>
+                    <select>
+                        <option value="">A a la Z</option>
+                    </select>
+                </div>
+                <div class="custom-select" style="width:200px;">
+                    <h3>Fecha: </h3>
+                    <select>
+                        <option value="">Escoge una opción</option>
+                    </select>
+                </div>
+                <div class="custom-select" style="width:200px;">
+                    <h3>Tamaño: </h3>
+                    <select>
+                        <option value="">Escoge una opción</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons-filters">
+                <div class="button-clear" id="botonClear">
+                    <img src="assets/icons/brush-solid.svg" alt="icon-limpiar-filtro">
+                    <p>Limpiar filtros</p>
+                </div>
+                <div class="button-apli" id="boton">
+                    <img src="assets/icons/filter-solid.svg" alt="icon-aplicar-filtro">
+                    <p>Aplicar filtros</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-components">
+            <div class="components-projects">
+                <div class="projects-title" >
+                    <img src="assets/icons/building-regular - copia.svg" alt="icon-edificio">
+                    <h2>Proyectos</h2>
+                    <p>(Todos)</p>
+                </div>
+
+                <div class="projects-icon">
+                    <div class="projects-icon__container">
+                        <a href="javascript:open()"><img src="assets/icons/filter-solid.svg" alt="icon-filtro"></a>
+                    </div>
+                    <div class="projects-icon__containerB">
+                        <img src="assets/icons/th-large-solid.svg" alt="icon-menu cuadros ">
+                    </div>
+                    <div class="projects-icon__containerC">
+                        <img src="assets/icons/list-solid.svg" alt="icon-menu lista">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-component__container">
+                <div class="component-card" id="iniciado"> 
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status">
+                                    <p>iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card noIniciado">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status2">
+                                    <p>No iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card" id="detenido">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status3">
+                                    <p>Detenido</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card" id="finalizado">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status4">
+                                    <p>Finalizado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-card"  id="iniciado">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status">
+                                    <p>iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card"  id="iniciado">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status">
+                                    <p>iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card"  id="iniciado">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status">
+                                    <p>iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card noIniciado2">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status2">
+                                    <p>No iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-card noIniciado3">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status2">
+                                    <p>No iniciado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card" id="detenido2">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status3">
+                                    <p>Detenido</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card" id="finalizado2">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status4">
+                                    <p>Finalizado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card" id="finalizado3">
+                    <div class="card-up">
+                        <div class="card-header">
+                            <div class="header-left">
+                                <div class="header-status4">
+                                    <p>Finalizado</p>
+                                </div>
+                                <div class="header-left__icons">
+                                    <div class="icon-one">
+                                        <img src="assets/icons/calendar-alt-regular.svg" alt="icon-calendario">
+                                        <p>03/04/21</p>
+                                    </div>
+                                    <div class="icon-two">
+                                        <img src="assets/icons/user-circle-regular - copia.svg" alt="icon-usuarios">
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <img src="assets/icons/star-solid (1).svg" alt="icon-estrella">
+                            </div>
+                        </div>
+    
+                        <div class="card-main">
+                            <h3>Nombre del proyecto</h3>
+                            <p>Dirección del proyecto, ubicación</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="card-down">
+                        <div class="card-iconUp">
+                            <div class="iconUp-dollar">
+                                <img src="assets/icons/dollar-sign-solid.svg" alt="icon-signo">
+                                <p>2.000.030 USD</p>
+                            </div>
+                            <div class="iconUp-ruler">
+                                <img src="assets/icons/ruler-combined-solid.svg" alt="icon-regla">
+                                <p>960m2</p>
+                            </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <div class="card-iconDown">
+                            <div class="iconDown-check">
+                                <img src="assets/icons/check-circle-regular.svg" alt="icon-visto bueno">
+                                <p>81%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-ppc">
+                                <p>15%</p>
+                            </div>
+                            <div class="iconDown-square">
+                                <img src="assets/icons/square-regular.svg" alt="icon-pcr">
+                                <p>46%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-container">
+                <div class="iconComments">
+                    <img src="assets/icons/comments-regular.svg" alt="icon-comentarios">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+    <script src="js/filter.js"></script>  
+</body>
+</html>
